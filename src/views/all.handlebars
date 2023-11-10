@@ -1,0 +1,17 @@
+<section>
+  <h3>ALL PRODUCTS</h3>
+  <section class="products-container">
+    {{#each products}}
+      <a href="/api/products/{{_id}}">
+        <div class="products-container-Logo-container">
+          <img class="logo" alt="logoShop" src="/images/cellPhoneLogo.png" />
+        </div>
+        <div class="products-container-logo-info">
+          <p>{{name}}</p>
+          <p>$ {{price}} </p>
+        </div>
+
+      </a>
+    {{/each}}
+  </section>
+</section>

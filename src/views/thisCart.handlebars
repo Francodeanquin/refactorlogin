@@ -1,0 +1,30 @@
+<section class="container-InfoProductsCart">
+<h2>Este es tu carrito </h2>
+<p class="idCart">ID: {{cartInfo._id}}</p>
+
+<article class="infoProductsCart">
+    <p>Tus productos son:</p>
+    <table class="tableCart">
+    
+        <tr>
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+        </tr>
+ 
+ 
+        {{#each cartInfo.productsCart}}
+        <tr >
+            <td>{{this.idProduct.nombre}}</td>
+            <td>{{this.idProduct.price}}</td>
+            <td>{{this.qty}}</td>
+
+        </tr>
+        {{/each}}
+
+</table>
+    
+
+</article>
+</section>
+         

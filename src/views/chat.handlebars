@@ -1,0 +1,33 @@
+<h2>CHAT</h2>
+<form id="formMessage" action="/api/messages" method="post">
+  Nombre <input type="text" name="fromUser" id="fromUser">
+   Mensaje <input type="text" name="contentMessage" id="contentMessage"  />
+   Para: <input type="text" name="toUser" id="toUser">
+  <input type="submit" value="SEND">
+</form>
+
+<section class="renderMessages">
+    <table id="table">
+    <thead>
+        <tr>
+            <th>De:</th>
+            <th>Mensaje:</th>
+            <th>Para:</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        {{#each messages}}
+        <tr >
+            <td>{{fromUser}}</td>
+            <td>{{contentMessage}}</td>
+            <td>{{toUser}}</td>
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+

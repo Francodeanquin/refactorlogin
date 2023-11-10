@@ -1,0 +1,209 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #a1b2c3;
+    }
+
+h2, h3{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+}
+#form-create,
+#formUsers{
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+    padding: 1vw 3vw;
+    text-align: center;
+}
+
+#form-create input,
+#formUsers input,
+#form-create select {
+    height: 2rem;
+   min-width: 80%;
+   margin: auto 10%;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+/* allProducts */
+
+.products-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+   gap: 60px;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.logo{
+    width: 400px;
+    height: auto;
+}
+
+.products-container-logo-info{
+    text-align: center;
+}
+
+
+/* chat */
+#formMessage {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  
+  /* Tabla de mensajes */
+  /* Estilos para el chat */
+#formMessage {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #formMessage input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  /* Estilos para la tabla de mensajes */
+  .renderMessages {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilos para la tabla de mensajes */
+  table thead {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Estilos para los nombres de usuario en la tabla de mensajes */
+  table tbody td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Estilos para los mensajes en la tabla de mensajes */
+  table tbody td:nth-child(2) {
+    width: 60%;
+  }
+
+
+  /* Estilos para la sección "ALL PRODUCTS" */
+section {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el contenedor de productos */
+.products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.products-container a:hover {
+    background-color: #eee;
+}
+
+.products-container-Logo-container {
+    width: 200px;
+    height: auto;
+}
+
+.products-container-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.products-container-logo-info {
+    text-align: center;
+}
+
+.products-container-logo-info p {
+    margin: 10px;
+}
+
+
+
+/* One product */
+.one-product{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+
+}
+
+.form-one-product button{
+    width: 70px;
+    height: 70px;
+   border:none;
+   margin-top: 15px;
+}
+
+
+.form-one-product-logo{
+max-width: 70px;
+height: 70px;
+border-radius: 50%;
+background-color: #a1b2c3;
+border: 5px solid lightblue;
+}
+

@@ -1,0 +1,24 @@
+<h2>CREATE PRODUCT</h2>
+<form  id="form-create" action="/api/products" method="post">
+ Nombre:
+    <input type="text" name="title" id="title" required />
+    Description:
+    <input type="text" name="description" id="description" required />
+    Price:
+    <input type="number" name="price" id="price" required />
+    Image:
+    <input type="text" name="thumbnail" id="thumbnail" required  />
+    Code:
+    <input type="text" name="code" id="code" required />
+    Stock:
+    <input type="number" name="stock" id="stock" required />
+    Status:
+    <select id="status" name="status">
+        <option value="true">true</option>
+        <option value="false">false</option>
+    </select>
+    Category:
+    <input type="text" name="category" id="category" required />
+    <input type="submit" value="SEND" />
+
+</form>
